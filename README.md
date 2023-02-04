@@ -13,3 +13,7 @@ Supports:
 - `for each` .. `in` .. `end for` .. `exit for`
 - `while` .. `end while` .. `exit while`
 - `try` .. `catch` .. `end try`
+
+## Known Issues
+
+Doesn't quite work properly with `for` loops and `while` loops.
