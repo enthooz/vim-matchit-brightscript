@@ -3,4 +3,13 @@
 - Add [Matchit](https://github.com/adelarsq/vim-matchit) `match_words` for BrightScript.
 - Works with neovim.
 - Case-insensitive.
-- Supports `function..end function`, `sub..end sub`, and `if..else if..else..end`.
+
+Supports:
+
+- `function` .. `end function`
+- `sub` .. `end sub`
+- `if` .. `else if` .. `else` .. `end`
+- `for` .. `to` .. `end for` .. `step` .. `exit for`
+- `for each` .. `in` .. `end for` .. `exit for`
+- `while` .. `end while` .. `exit while`
+- `try` .. `catch` .. `end try`
