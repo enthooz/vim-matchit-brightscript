@@ -73,11 +73,18 @@ function add_match_word(tokens, not_tokens)
   end
 end
 
+
 -- Main
-add_match_word({'function', 'end function'}, {'end'})
-add_match_word({'sub', 'end sub'}, {'end'})
-add_match_word({'if', 'else if', 'else', 'end if'}, {'end', 'else'})
-add_match_word({'for','to','end for','step','exit for'}, {'end', 'exit'})
-add_match_word({'for each','in','end for','exit for'}, {'end', 'exit'})
-add_match_word({'while','end while','exit while'}, {'end', 'exit'})
-add_match_word({'try','catch','end try'}, {'end'})
+local function setup()
+  add_match_word({'function', 'end function'}, {'end'})
+  add_match_word({'sub', 'end sub'}, {'end'})
+  add_match_word({'if', 'else if', 'else', 'end if'}, {'end', 'else'})
+  add_match_word({'for','to','end for','step','exit for'}, {'end', 'exit'})
+  add_match_word({'for each','in','end for','exit for'}, {'end', 'exit'})
+  add_match_word({'while','end while','exit while'}, {'end', 'exit'})
+  add_match_word({'try','catch','end try'}, {'end'})
+end
+
+return {
+  setup = setup,
+}

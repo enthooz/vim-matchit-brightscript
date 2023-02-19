@@ -1,5 +1,16 @@
 # Matchit: BrightScript (neovim)
 
+- Install with packer
+
+```lua
+use {
+  "enthooz/vim-matchit-brightscript"
+  config = function()
+    require("vim-matchit-brightscript").setup()
+  end,
+}
+```
+
 - Add [Matchit](https://github.com/adelarsq/vim-matchit) `match_words` for BrightScript.
 - Works with neovim.
 - Case-insensitive.
