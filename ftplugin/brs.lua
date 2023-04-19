@@ -74,10 +74,11 @@ function add_match_word(tokens, not_tokens)
 end
 
 -- Main
-add_match_word({'function', 'end function'}, {'end'})
-add_match_word({'sub', 'end sub'}, {'end'})
-add_match_word({'if', 'else if', 'else', 'end if'}, {'end', 'else'})
-add_match_word({'for','to','end for','step','exit for'}, {'end', 'exit'})
-add_match_word({'for each','in','end for','exit for'}, {'end', 'exit'})
-add_match_word({'while','end while','exit while'}, {'end', 'exit'})
-add_match_word({'try','catch','end try'}, {'end'})
+
+add_match_word({'function', 'end\\s\\*function'}, {'end'})
+add_match_word({'sub', 'end\\s\\*sub'}, {'end'})
+add_match_word({'if', 'else\\s\\*if', 'else', 'end\\s\\*if'}, {'end', 'else'})
+add_match_word({'for','to','end\\s\\*for','step','exit\\s\\*for'}, {'end', 'exit'})
+add_match_word({'for each','in','end\\s\\*for','exit\\s\\*for'}, {'end', 'exit'})
+add_match_word({'while','end\\s\\*while','exit\\s\\*while'}, {'end', 'exit'})
+add_match_word({'try','catch','end\\s\\*try'}, {'end'})
